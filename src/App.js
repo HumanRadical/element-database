@@ -14,8 +14,8 @@ export default function App() {
 
   return (
     <>
-      <h1>The Element Database</h1>
-      <div className="card-container">
+      <h1 className='title'>The Element Database</h1>
+      <div className='card-container'>
         {elementCards}
       </div>
     </>
