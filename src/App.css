@@ -5,12 +5,32 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
+  margin: 3px;
   width: 150px;
-  border: 1px solid black;
+  border: 3px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-image {
+  margin: 0;
+}
+
+.card-symbol {
+  margin: 0;
+  font-size: 40px;
+}
+
+.card-name {
+  margin: 10px;
+}
+
+.card-mass {
+  margin: 0;
+  margin-bottom: 10px;
 }

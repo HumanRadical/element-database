@@ -1,13 +1,13 @@
 import ElementCard from './components/ElementCard'
-import elements from './elements.json'
+import elements from './periodic-table.json'
 import './App.css';
 
 export default function App() {
-  const elementCards = elements.map(element => {
+  const elementCards = Object.entries(elements).map(element => {
     return (
       <ElementCard 
-        key={element.number}
-        {...element}
+        key={element[1].number}
+        {...element[1]}
       />
     )
   })
