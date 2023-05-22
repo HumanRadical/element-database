@@ -19,7 +19,7 @@ body {
 .card {
   margin: 3px;
   width: 220px;
-  height: 450px;
+  height: 440px;
   border: 3px solid black;
   border-radius: 10px;
   background-color: #6c91c2;
@@ -35,8 +35,9 @@ body {
 }
 
 .card-image {
-  margin: 0;
-  width: 100%;
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
 }
 
 .card-symbol {
