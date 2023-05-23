@@ -3,11 +3,11 @@ import elements from './periodic-table.json'
 import './App.css';
 
 export default function App() {
-  const elementCards = Object.entries(elements).map(element => {
+  const elementCards = Object.values(elements).map(element => {
     return (
       <ElementCard 
-        key={element[1].number}
-        {...element[1]}
+        key={element.number}
+        {...element}
       />
     )
   })
