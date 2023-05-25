@@ -27,14 +27,15 @@ export default function App() {
   return (
     <>
       <h1 className='title'>The Element Database</h1>
-      <section className='element-card-container'>
-        {elementCards}
-      </section>
-      {currentElement && 
-        <InfoCard 
-          {...elementArray[currentElement - 1]}
-        />
-      }
+        <div className='element-card-container'>
+          {elementCards}
+        </div>
+        {currentElement && 
+          <InfoCard 
+            {...elementArray[currentElement - 1]}
+            closeInfoCard={() => setCurrentElement(0)}
+          />
+        }
     </>
   );
 }
