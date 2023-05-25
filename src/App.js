@@ -1,13 +1,25 @@
 import ElementCard from './components/ElementCard'
 import elements from './periodic-table.json'
 import './App.css';
+import { useState } from 'react';
+import InfoCard from './components/InfoCard';
 
 export default function App() {
-  const elementCards = Object.values(elements).map(element => {
+  const elementArray = Object.values(elements)
+
+  const [currentElement, setCurrentElement] = useState(0)
+
+  const selectCurrentElement = elementNum => {
+    setCurrentElement(elementNum)
+    console.log(elementNum)
+  }
+
+  const elementCards = elementArray.map(element => {
     return (
       <ElementCard 
         key={element.number}
         {...element}
+        selectCurrentElement={selectCurrentElement}
       />
     )
   })
@@ -15,9 +27,14 @@ export default function App() {
   return (
     <>
       <h1 className='title'>The Element Database</h1>
-      <div className='card-container'>
+      <div className='element-card-container'>
         {elementCards}
       </div>
+      {currentElement && 
+        <InfoCard 
+          {...elementArray[currentElement]}
+        />
+      }
     </>
   );
 }
