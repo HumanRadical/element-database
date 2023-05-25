@@ -4,9 +4,28 @@ body {
   color: #fbfef9;
 }
 
+.body-container {
+  display: flex;
+}
+
+.element-container {
+  flex: 3;
+}
+
+.info-container {
+  flex: 1;
+}
+
 .title {
   margin: 20px;
   font-size: 50px;
+}
+
+.element-card-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .element-card {
@@ -22,13 +41,6 @@ body {
   align-items: center;
   cursor: pointer;
   transition: all 200ms;
-}
-
-.element-card-container {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .element-card:hover {
@@ -57,12 +69,13 @@ body {
 }
 
 .info-card {
+  height: 99%;
   text-align: start;
   color: black;
   background-color: #fbfef9;
-  width: 500px;
   padding: 0 20px;
   border: 5px solid black;
+  position: fixed;
   display: flex;
   flex-direction: column;
 }

@@ -25,17 +25,22 @@ export default function App() {
   })
 
   return (
-    <>
+    <div className='body-container'>
+      <section className='element-container'>
       <h1 className='title'>The Element Database</h1>
         <div className='element-card-container'>
           {elementCards}
         </div>
-        {currentElement && 
-          <InfoCard 
-            {...elementArray[currentElement - 1]}
-            closeInfoCard={() => setCurrentElement(0)}
-          />
-        }
-    </>
+      </section>
+      {currentElement ? 
+        <section className='info-container'>
+            <InfoCard 
+              {...elementArray[currentElement - 1]}
+              closeInfoCard={() => setCurrentElement(0)}
+            />
+        </section>
+        : ""
+      }
+    </div>
   );
 }
