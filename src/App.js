@@ -1,8 +1,8 @@
-import ElementCard from './components/ElementCard'
-import elements from './periodic-table.json'
 import './App.css';
-import { useState } from 'react';
-import InfoCard from './components/InfoCard';
+import { useState } from 'react'
+import elements from './periodic-table.json'
+import ElementCard from './components/ElementCard'
+import InfoCard from './components/InfoCard'
 
 export default function App() {
   const elementArray = Object.values(elements)
