@@ -3,8 +3,14 @@ export default function InfoCard(props) {
         <div className="info-card">
             <img className='info-card-image' src={props.image.url} alt=''/>
             <h2 className='info-card-number'>Element number: {props.number}</h2>
-            <h2 className='info-card-symbol'>Symbol: {props.symbol}</h2>
-            <h3 className='info-card-name'>Name: {props.name}</h3>
+            <div className="info-card-details">
+                <p>Symbol: {props.symbol}</p>
+                <p>Name: {props.name}</p>
+                <p>Appearance: {props.appearance ? props.appearance : "???"}</p>
+                <p>Phase at STP: {props.phase}</p>
+                <p>Atomic mass: {props.atomic_mass}</p>
+                <p>Summary: {props.summary}</p>
+            </div>
         </div>
     )
 }

@@ -60,12 +60,20 @@ body {
   text-align: start;
   color: black;
   background-color: #fbfef9;
-  width: 300px;
+  width: 500px;
   padding: 30px;
   border: 5px solid black;
 }
 
 .info-card-image {
-  height: 300px;
   width: 300px;
+  border: 3px solid black;
+}
+
+.info-card-number {
+  font-size: 30px;
+}
+
+.info-card-details {
+  font-size: 18px;
 }

@@ -27,12 +27,12 @@ export default function App() {
   return (
     <>
       <h1 className='title'>The Element Database</h1>
-      <div className='element-card-container'>
+      <section className='element-card-container'>
         {elementCards}
-      </div>
+      </section>
       {currentElement && 
         <InfoCard 
-          {...elementArray[currentElement]}
+          {...elementArray[currentElement - 1]}
         />
       }
     </>
