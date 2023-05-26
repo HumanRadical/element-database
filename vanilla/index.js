@@ -25,7 +25,7 @@ const appendInfoCard = element => {
 
     const number = document.createElement('h2')
     number.classList.add('info-card-number')
-    number.innerText = element.number
+    number.innerText = `Element number: ${element.number}`
 
     const details = document.createElement('div')
     details.classList.add('info-card-details')
