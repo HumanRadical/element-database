@@ -14,7 +14,7 @@ export default function App() {
       <ElementCard 
         key={element.number}
         {...element}
-        selectCurrentElement={() => setCurrentElement(elementNum)}
+        selectCurrentElement={() => setCurrentElement(element.number)}
       />
     )
   })
