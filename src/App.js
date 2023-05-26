@@ -9,17 +9,12 @@ export default function App() {
 
   const [currentElement, setCurrentElement] = useState(0)
 
-  const selectCurrentElement = elementNum => {
-    setCurrentElement(elementNum)
-    console.log(elementNum)
-  }
-
   const elementCards = elementArray.map(element => {
     return (
       <ElementCard 
         key={element.number}
         {...element}
-        selectCurrentElement={selectCurrentElement}
+        selectCurrentElement={() => setCurrentElement(elementNum)}
       />
     )
   })
