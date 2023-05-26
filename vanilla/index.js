@@ -75,11 +75,11 @@ const appendElementCard = element => {
     image.classList.add('element-card-image')
     image.src = element.image.url
 
-    const symbol = document.createElement('h2')
+    const symbol = document.createElement('h3')
     symbol.classList.add('element-card-symbol')
     symbol.innerText = element.symbol
 
-    const name = document.createElement('h3')
+    const name = document.createElement('h4')
     name.classList.add('element-card-name')
     name.innerText = element.name
 
