@@ -20,106 +20,106 @@ body {
 }
 
 .body-container {
-display: flex;
+    display: flex;
 }
 
 .element-container {
-flex: 3;
+    flex: 3;
 }
 
 .info-container {
-flex: 1;
+    flex: 1;
 }
 
 .title {
-margin: 20px;
-font-size: 50px;
+    margin: 20px;
+    font-size: 50px;
 }
 
 .element-card-container {
-margin: 10px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .element-card {
-margin: 10px;
-width: 200px;
-height: 300px;
-border: 3px solid black;
-border-radius: 10px;
-background-color: #6c91c2;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-cursor: pointer;
-transition: all 200ms;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #6c91c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: all 200ms;
 }
 
 .element-card:hover {
-box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.7);
 }
 
 .element-card-number {
-margin: 0;
-margin-top: 10px;
+    margin: 0;
+    margin-top: 10px;
 }
 
 .element-card-image {
-object-fit: cover;
-width: 150px;
-height: 150px;
-border: 3px solid black;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
 }
 
 .element-card-symbol {
-margin: 0;
-font-size: 40px;
+    margin: 0;
+    font-size: 40px;
 }
 
 .element-card-name {
-margin: 10px;
+    margin: 10px;
 }
 
 .info-card {
-height: 99%;
-text-align: start;
-color: black;
-background-color: #fbfef9;
-padding: 0 20px;
-border: 3px solid black;
-position: fixed;
-display: flex;
-flex-direction: column;
+    height: 99%;
+    text-align: start;
+    color: black;
+    background-color: #fbfef9;
+    padding: 0 20px;
+    border: 3px solid black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-card-image {
-width: 300px;
-border: 3px solid black;
-align-self: center;
+    width: 300px;
+    border: 3px solid black;
+    align-self: center;
 }
 
 .info-card-close {
-font-size: 60px;
-border: none;
-background-color: transparent;
-align-self: flex-end;
-cursor: pointer;
+    font-size: 60px;
+    border: none;
+    background-color: transparent;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 .info-card-number {
-margin-top: 18px;
-margin-bottom: 0;
-font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 30px;
 }
 
 .info-card-details {
-font-size: 18px;
+    font-size: 18px;
 }
 
 .info-card-details > p {
-margin-top: 12px;
-margin-bottom: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
 }
