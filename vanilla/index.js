@@ -1,7 +1,5 @@
 import elements from '/periodic-table.json' assert { type: 'json' }
 
-const bodyContainer = document.getElementById('body-container')
-const elementContainer = document.getElementById('element-container')
 const elementCardContainer = document.getElementById('element-card-container')
 const infoContainer = document.getElementById('info-container')
 const elementArray = Object.values(elements)
