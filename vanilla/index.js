@@ -8,14 +8,18 @@ const elementArray = Object.values(elements)
 
 const appendInfoCard = element => {
     infoContainer.innerHTML = ''
+    infoContainer.style.flex = 1
 
     const card = document.createElement('div')
     card.classList.add('info-card')
-    
+
     const close = document.createElement('button')
     close.innerText = 'x'
     close.classList.add('info-card-close')
-    close.addEventListener('click', () => infoContainer.innerHTML = '')
+    close.addEventListener('click', () => {
+        infoContainer.innerHTML = ''
+        infoContainer.style.flex = 0
+    })
 
     const image = document.createElement('img')
     image.classList.add('info-card-image')
